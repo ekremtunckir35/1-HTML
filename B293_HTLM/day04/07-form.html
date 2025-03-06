@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>Form</h1>
+
+    <form action="">
+
+        <!-- label'daki for ile input'taki id aynı olması durumunda bu iki elementi birbirine bağlamış oluruz.  -->
+        <label for="username">Kullanıcı Adı: </label>
+        <!-- Value genellikle varsayılan bir konseptin yazılması için kullanılır. -->
+         <!-- Placeholder özelliği input altına gölge şeklinde bilgi eklenmesine yarar. -->
+          <!-- Text type en geniş input türüdür. -->
+        <input id="username" type="text" placeholder="Kullanıcı Adı">
+
+        <!-- Butonun üzerinde yazan ifadeyi değiştirmek için value kullanılır -->
+         <!-- Submit, form aksiyonunu tetikleyecektir. -->
+        <input type="submit" value="Gönder">
+        <!-- <button type="submit" title="Formu gönder">Gönder Butonu</button> -->
+
+        <!-- Reset inputlar içersine yazılan yazıları varsayılan haline getirir. -->
+        <input type="reset">
+
+    </form>
+
+    <br>
+
+    <!-- LOGIN -->
+    <form action="" method="get">
+
+        <label for="username1">Username</label>
+        <input type="text" id="username1" name="username" placeholder="Enter your username">
+
+        <br>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+
+        <br>
+        <input type="submit" title="Login to your account" value="Login">
+
+    </form>
+
+  </body>
+</html>
