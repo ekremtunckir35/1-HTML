@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice - Form</title>
+  </head>
+  <body>
+    <h1>Practice - Form</h1>
+
+    <form>
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <label for="eposta">Eposta</label>
+            </td>
+
+            <td>
+              <input type="email" name="eposta" id="eposta" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="sifre">Şifre</label>
+            </td>
+            <td>
+              <input type="password" id="sifre" name="sifre" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="guvenlik">Güvenlik Kodu</label>
+            </td>
+            <td>
+              <input type="number" id="guvenlik" name="guvenlik" value="1234" readonly/>
+              <!-- readonly özelliği inputları okunabilir, kopyalanabilir ancak değiştirilemez hale getirir. -->
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input style="width: 170px" type="submit" value="Kaydet" disabled />
+              <!-- disabled input özelliğidir ve eklendiğinde inputu görünür ancak kullanılmaz hale gelir. -->
+            </td>
+            <td>
+              <input style="width: 170px" type="reset" value="Temizle" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>

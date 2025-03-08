@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Types</title>
+  </head>
+  <body>
+    <h1>Form Types</h1>
+
+    <form>
+      <!-- İsim -->
+      <!-- TEXT -->
+      <label for="isim">İsim</label>
+      <input
+        type="text"
+        id="isim"
+        name="isim"
+        placeholder="İsminizi giriniz."
+      />
+
+      <br />
+
+      <!-- Soyisim -->
+      <!-- TEXT -->
+      <label for="soyisim">Soyisim</label>
+      <input
+        type="text"
+        id="soyisim"
+        name="soyisim"
+        placeholder="Soyisminizi giriniz."
+      />
+
+      <br />
+
+      <!-- Yaş -->
+      <!-- NUMBER => sadece rakam değerleri alır. -->
+      <label for="yas">Yaş</label>
+      <input
+        type="number"
+        id="yas"
+        name="yas"
+        placeholder="Yaşınızı giriniz."
+      />
+
+      <br />
+
+      <!-- Eposta -->
+      <!-- EMAIL => inputta @ işareti kullanılmasını zorunlu tutar. -->
+      <label for="eposta">Eposta</label>
+      <input
+        type="email"
+        name="eposta"
+        id="eposta"
+        placeholder="E-postanızı giriniz."
+      />
+
+      <br />
+
+      <!-- Şifre -->
+      <!-- PASSWORD => yazılan karakterleri anonimleştirir. Kopyalanamaz hale getirir. -->
+      <label for="sifre">Şifre</label>
+      <input
+        type="password"
+        id="sifre"
+        name="sifre"
+        placeholder="***********"
+      />
+
+      <br />
+
+      <!-- Arama -->
+      <!-- SEARCH => karakter girildiğinde yazıyı silmek için x butonu çıkar. -->
+      <label for="arama">Ara</label>
+      <input
+        type="search"
+        id="arama"
+        name="arama"
+        placeholder="Arama yapınız."
+      />
+
+      <br />
+
+      <!-- URL => URL validasyonu yapar. -->
+      <label for="url">URL</label>
+      <input type="url" id="url" name="url" placeholder="URL giriniz." />
+
+      <br />
+
+      <!-- Telefon Numarası -->
+      <!-- TEL -->
+      <label for="tel">Telefon Numarası</label>
+      <input
+        type="tel"
+        id="tel"
+        name="tel"
+        placeholder="Telefon Numaranızı giriniz."
+      />
+
+      <br>
+
+      <!-- HIDDEN => inputu görünmez hale getirir (kullanıcının görmesine gerek olmayan veya görmemesi gereken data aktarımı için kullanılır. Genellikle value değerine yer verilir.) -->
+       <input type="hidden" name="userId" value="123">
+
+      <br />
+
+      <!-- SUBMIT => Form gönderme aksiyonunu gerçekleştirmek için kullanılır. -->
+      <input type="submit" value="Gönder" />
+
+      <br> 
+
+      <!-- BUTTON => aksiyon atanması durumunda askiyonu gerçekleştirir. Atama olmadığı zaman işlevsizdir. -->
+      <input type="button" value="Button">
+
+      <br>
+
+      <!-- RESET => girilen değerlerin eski haline getirilmesine yarar. -->
+       <input type="reset" value="Temizle">
+
+    </form>
+  </body>
+</html>
