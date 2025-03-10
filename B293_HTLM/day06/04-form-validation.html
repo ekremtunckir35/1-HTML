@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form - Validation</title>
+  </head>
+  <body>
+    <h1>Form - Validation</h1>
+
+    <form action="">
+      <!-- required, input boş gönderildiğinde uyarı vermesini sağlar -->
+      <!-- minlength, input'a karakter girildiğinde en az içerisinde belirtilen sayı kadar karakter kullanılması konusunda uyarı verir. -->
+      <!-- maxlength, input'a girilebilecek maksimum karakter sayısını belirler. Bu sayısının üzerinde herhangi bir karakter girilmesini engeller. -->
+
+      <label for="fullName">İsim Soyisim</label>
+      <br />
+      <input type="text" id="fullName" name="fullName" required />
+
+      <br />
+      <br />
+
+      <label for="pass">Şifre</label>
+      <br />
+      <input
+        type="password"
+        name="pass"
+        id="pass"
+        minlength="8"
+        maxlength="18"
+      />
+
+      <br />
+      <br />
+
+      <label for="age">Yaş</label>
+      <br />
+      <input 
+        type="number" 
+        id="age" 
+        name="age" 
+        required 
+        min="18" 
+        max="99" />
+
+      <br />
+      <br />
+
+      <input type="submit" value="Gönder" />
+    </form>
+  </body>
+</html>

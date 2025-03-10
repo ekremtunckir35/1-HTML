@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form - Types 2</title>
+  </head>
+  <body>
+    <h1>Form - Types 2</h1>
+
+    <form>
+      <!-- CHECKBOX => birden fazla kutucuğun seçilmesine olanak sağlayar. -->
+      <input type="checkbox" id="kabul" name="kabul" />
+      <label for="kabul">Kabul Et</label>
+
+      <br />
+
+      <!-- Grouping => gruplamak için aynı name yazmamız gerekir. -->
+      <input type="checkbox" id="gitar" name="hobiler" value="gitar" />
+      <label for="gitar">Gitar Çalmak</label>
+
+      <input type="checkbox" name="hobiler" id="yuzmek" value="yuzmek" />
+      <label for="yuzmek">Yüzmek</label>
+
+      <input type="checkbox" name="hobiler" id="futbol" value="futbol" />
+      <label for="futbol">Futbol Oynamak</label>
+
+      <br />
+
+      <!-- RADIO => name özelliği aynı olan birden fazla seçenekten sadece birisinin seçilmesine olanak sağlar. -->
+
+      <input type="radio" name="cinsiyet" id="kadin" value="kadin" />
+      <label for="kadin">Kadın</label>
+
+      <input type="radio" name="cinsiyet" id="erkek" value="erkek" />
+      <label for="erkek">Erkek</label>
+
+      <input type="radio" name="cinsiyet" id="diğer" value="diğer" />
+      <label for="diğer">Diğer</label>
+
+      <br />
+
+      <!-- FILE => bilgisayardan dosya eklenmesi için kullanılır -->
+
+      <label for="dosya">Dosya seçiniz</label>
+      <input type="file" name="dosya" id="dosya" />
+
+      <br />
+
+      <!-- COLOR => renk seçilmesini sağlar -->
+      <label for="renk">Renk Seçiniz</label>
+      <input type="color" name="renk" id="renk" />
+
+      <br>
+
+      <!-- RANGE => kayrıdırlabilir değeri atanmasına yarar. -->
+
+      <label for="aralik">Aralık</label>
+      <input type="range" name="aralik" id="aralik">
+
+      <br>
+
+      <!--DATE ==> gg.aa.yyyy seklinde atama yapilmasini saglar-->
+        <label for="tarih">Tarih</label>
+        <input type="date" name="tarih" id="tarih">
+
+        <br>
+
+        <!--TIME ==> saat atamasi yapilmasini saglar-->
+
+      <label for=""saat">Saat</label>
+      <input type="time" name="saat" id="saat">
+
+
+      <!--DATETIME-LOCAL-->
+
+        <label for ="randevu">Randevu Tarihi</label>
+        <input type="datetime-local" name="randevu" id="randevu">
+
+        <br>
+
+        <!--MONTH==> belilrli bir yil ve ayin secilmesini saglar-->
+        <label for="ay">Ay Seciniz</label>
+        <input type="month" name="ay" id="ay">
+
+        <br>
+
+        <!--WEEK==> belirli bir haftanin secilmesini saglar-->
+        <label for="hafta">Hafta Seciniz</label>
+        <input type="week" name="hafta" id="hafta">
+
+
+
+    </form>
+  </body>
+</html>
