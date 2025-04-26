@@ -42,6 +42,10 @@
 type="1 | A |
 
 <ul type ="disc |square |circle " >
+     
+      disc ---> ici dolu
+      square--> kare ici dolu
+      circle--> 
 
 //---------------------------------------
 
