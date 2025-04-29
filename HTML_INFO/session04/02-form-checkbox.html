@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="">
+        <label >Email</label>
+        <input type="text">
+        <input type="button" value="Kaydet">
+    </form>
+    <br>
+
+    <form method="post" action="/account/login">
+        <input type="text" name="firstName"><br>
+        <input type="number" name="salary"><br>
+        <input type="email" name="email"><br>
+        <input type="password" name="pass"><br>
+        <input type="search" name="search"><br>
+        <input type= "url" name="website">
+        <input type="tel" name="phone"><br>
+        <input type="hidden" name="code"><br>
+
+        <input type="checkbox" name="user" id="usr">
+        <label for="usr">Kullanici Sozlesmesini Okudum</label><br>
+
+        <input type="checkbox" name="sales" /> Satis Sozlesmesini Okudum<br>
+
+        <input type="radio" name="gender" id="genderM">
+        <label for="">Erkek</label>
+
+        <input type="radio" name="gender" id="genderF">
+        <label for="">Kadin</label>
+
+        <input type="file" name="avatar" id=""><br>
+
+        <input type="color" name="renk" ><br>
+
+        <input type="button" value="Kaydet">
+
+        <!--button-->
+        <button type="submit" value="Custom">Submit</button>
+        <button type="reset" value="Save">Reset</button>
+        <button type="button" value="Reset">Button</button>
+       </form>
+</body>
+</html>
